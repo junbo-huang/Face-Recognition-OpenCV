@@ -42,5 +42,5 @@ images, labels = get_images_and_labels(path)
 print(images, labels)
 
 recognizer.train(images, np.array(labels))
-recognizer.save('trainer_2.yml')
+recognizer.save('trained.yml')
 cv2.destroyAllWindows()
