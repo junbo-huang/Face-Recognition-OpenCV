@@ -40,10 +40,10 @@ while True:
         roi_color = img[y:y+h, x:x+w]
         
         if (conf>=40 and conf <= 75) and (ID_predicted==1):
-            ID_predicted = 'Handsome af'
+            ID_predicted = 'Handsome'
             cv2.putText(img,str(ID_predicted)+"--"+str(conf), (x,y+h),font, 1, (255,0,0),2, cv2.LINE_AA)
         elif (conf>=48 and conf <= 85) and (ID_predicted==2):
-            ID_predicted = 'Ugly af'
+            ID_predicted = 'Ugly'
             cv2.putText(img,str(ID_predicted)+"--"+str(conf), (x,y+h),font, 1, (255,255,0),2, cv2.LINE_AA) #Draw the text
         elif (conf>=45 and conf <= 80) and (ID_predicted==3):
             ID_predicted = 'Jason'
